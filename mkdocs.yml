@@ -1,0 +1,38 @@
+site_name: Heaps Tutorial
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+theme: 
+  name: material
+  features:
+      - content.code.copy
+      - content.code.select
+      - content.code.annotate
+
+
+nav:
+  - Introduction: index.md
+  - Basics:
+    - Project Structure: Tutorial/ProjectStructure.md
+    - Game Objects: 
+      - Texts and Fonts: Tutorial/Texts.md
+      - Basic Shapes: Tutorial/Shapes.md
+      - Images and Sprites: Tutorial/Images_and_Sprites.md
+      - Cameras: Tutorial/Cameras.md
+      - Tilemaps and Collisions: Tutorial/TilesandCollision.md
+      - Particles: Tutorial/Particles.md
+      - Using Spritesheets: Tutorial/UsingSpritesheets.md
+    - User Input:
+      - Input Handling: Tutorial/InputHandling.md
+      - Interactable Objects: Tutorial/InteractableObjects.md
+      - Event Handling: Tutorial/EventHandling.md
+      - Basic SideScrolling Movement: Tutorial/TopdownMovement.md
+    - User Interfaces:
+      - Basic Ui: Tutorial/UserInterface.md
