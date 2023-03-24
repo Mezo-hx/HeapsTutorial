@@ -27,7 +27,7 @@ var tf = new Text(DefaultFont.get());
 this creates a new variable which we named `tf`, next we assign an object to it (In this case, it's `Text`) with `new` before it so it'll know to create a new instance of the object. Next, between the parentheses, we added `DefaultFont.get()`, this simply get's the default font that is provided. Now, we can specify what  we want the text to show, via a String:
 
 ```haxe
-tf.Text = "Hello, Heaps!
+tf.text = "Hello, Heaps!
 ```
 
 
