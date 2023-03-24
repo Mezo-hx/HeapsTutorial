@@ -91,7 +91,37 @@ class Main extends hxd.App {
 
 While running it on a WebPage may be fine, some of you may want to run it as an executable file.
 
-There's two ways of using this, One is by using SDL through *HLSDL*:
+you'll need to change your **launch.json**  file in *.vscode* to the code shown below
+```json
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "HashLink (launch)",
+			"request": "launch",
+			"type": "hl",
+			"cwd": "${workspaceFolder}",
+			"preLaunchTask": {
+			  "type": "haxe",
+			  "args": "active configuration"
+			}
+		  },
+		  {
+			"name": "HashLink (attach)",
+			"request": "attach",
+			"port": 6112,
+			"type": "hl",
+			"cwd": "${workspaceFolder}",
+			"preLaunchTask": {
+			  "type": "haxe",
+			  "args": "active configuration"
+			}
+		  }
+	]
+}
+```
+
+Now, There's two ways of doing this, One is by using SDL through *HLSDL*:
 
 - `haxelib install hlsdl 1.13.0`
 
@@ -109,7 +139,9 @@ I am using *HLSDL* for this tutorial, but feel free to use *HLDX* instead.
 
 once you have either one installed, we can move on. The only thing you'll need to do is edit your `.hxml` file, and add 4 new lines:
 
-![Exe](../Images/Screenshot_2.png)
+![Exe](../Images/CodeGraphic.png)
+
+For information about `-D dce=full`, check out [Docs For It](https://haxe.org/manual/cr-dce.html)
 
 `client.hl` can be renamed to whatever you want, but it must have the `.hl` extension (this goes for HLDX also)
 
@@ -145,6 +177,8 @@ Next, find a folder called **HaxeToolkit**, for me, it's in my *C:* drive. And t
 
 Once your inside that folder, press *CTRL + A* and then *CTRL + V*, and replace all files.
 
+#### ~Don't forget to add the HL folder to your PATH~
+
 And now simply Re-open visual studio code and run it again.
 
 If you're on a Linux Distribution, you'll need to download one of the assets of the Nightly Build (for hashlink) based on your system
@@ -153,4 +187,4 @@ there's two versions
 
 the AMD64 version and the i386 version
 
-AMD64 is for x64 bit computers, while i386 is for x86 or x36 bit computers
+AMD64 is for x64 bit computers, while i386 are for x86 or x36 bit computers

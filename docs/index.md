@@ -5,7 +5,7 @@ Welcome to this tutorial on using Heaps in game development. Heaps is a powerful
 
 Before you start using Heaps, you need to have the following prerequisites installed on your system:
 
-- Haxe compiler (version 4 or later)
+- Haxe compiler (version 4 or later, Nightly build works also)
 
 - Heaps framework (latest version)
 
@@ -14,7 +14,7 @@ Before you start using Heaps, you need to have the following prerequisites insta
 If you don't have these prerequisites installed, we recommend you to follow Deepnight's [tutorial](https://deepnight.net/tutorial/a-quick-guide-to-installing-haxe/) on installing Haxe to get started.
 
 ## Target Audience
-This tutorial is designed for beginners who are interested in game development and have little or no prior programming experience. We will cover the basics of Haxe programming language as well as Heaps.
+This tutorial is designed for beginners who are interested in game development and have little programming experience. We will cover the basics of Haxe programming language as well as Heaps.
 
 ## Overview
 In this tutorial, we will start with the basics of Haxe programming language and gradually move towards more advanced topics. We will cover the following topics:
