@@ -1,4 +1,4 @@
-## Base Code
+## Default Font
 
 In the *Project Structure* page, we gave the code for each of the files, as well as the *Main.hx* file that we are gonna edit now, if you don't have a *Main.hx* file, make one and copy the code below:
 
