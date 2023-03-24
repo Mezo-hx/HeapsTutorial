@@ -75,7 +75,7 @@ So, what if we want to use Custom Fonts? first off, you'll need to download a pr
 
 ![BMFont](../Images/BMFont.png)
 
-If the characters background look dark compared to mines, just click on each one of them until all are lit up.
+If your characters background look dark compared to mines, just click on each one of them until all are lit up.
 
 Now, press **F** on your keyboard, once pressed, you should see this:
 
