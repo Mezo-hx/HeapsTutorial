@@ -21,7 +21,7 @@ class Main extends hxd.App {
 Now, let's start with adding a basic text with the default font, we can do this by typing this line in the `init` function between the brackets:
 
 ```haxe
-var tf = new Text(DefaultFont.get());
+var tf = new Text(hxd.res.DefaultFont.get());
 ```
 
 this creates a new variable which we named `tf`, next we assign an object to it (In this case, it's `Text`) with `new` before it so it'll know to create a new instance of the object. Next, between the parentheses, we added `DefaultFont.get()`, this simply get's the default font that is provided. Now, we can specify what  we want the text to show, via a String:
@@ -123,6 +123,10 @@ now, you should see your custom font in your Project once you run it (I'm using 
 and your code should look like this:
 
 ```haxe
+import hxd.res.Font;
+import hxd.res.DefaultFont;
+import h2d.Text;
+
 class Main extends hxd.App {    
     override function init() {
         var customFont = hxd.Res.Arial.toFont();
