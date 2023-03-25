@@ -1,44 +1,16 @@
 # Project Structure
 
-# As a Web Game
-Your project structure should look similar to this if you managed to set it up by following the [Heaps Documentation](https://heaps.io/documentation/hello-world.html)
+To begin with, you'll need to download my Pre-made [Template](https://github.com/FacilitatedIsTaken/heapsGameTemplate/archive/refs/heads/main.zip)
 
-![ProjectStructure](../Images/ProjectStructure.png)
+once downloaded, you can extract the ZIP file and rename it to whatever you want and open it in your preferred IDE/Code Editor (I personally use VSCode)
 
-```json
-{
-	"version": "0.2.0",
-	"configurations": [
-		{
-			"name": "HashLink (launch)",
-			"request": "launch",
-			"type": "hl",
-			"cwd": "${workspaceFolder}",
-			"preLaunchTask": {
-			  "type": "haxe",
-			  "args": "active configuration"
-			}
-		  },
-		  {
-			"name": "HashLink (attach)",
-			"request": "attach",
-			"port": 6112,
-			"type": "hl",
-			"cwd": "${workspaceFolder}",
-			"preLaunchTask": {
-			  "type": "haxe",
-			  "args": "active configuration"
-			}
-		  }
-	]
-}
-```
+And now run either one of the commands below
 
-Now, There's two ways of doing this, One is by using SDL through *HLSDL*:
+Use *SDL* through *HLSDL*
 
 - `haxelib install hlsdl 1.13.0`
 
-And the other way is by using DirectX through *HLDX*:
+Use DirectX through *HLDX*:
 
 - `haxelib install hldx 1.13.0`
 
@@ -50,13 +22,9 @@ While *HLDX* is more focused on Windows-specific development, or in other words,
 
 I am using *HLSDL* for this tutorial, but feel free to use *HLDX* instead.
 
-once you have either one installed, we can move on. The only thing you'll need to do is edit your `.hxml` file, and add 4 new lines:
+once you have either one installed, we can move on.
 
-![Exe](../Images/CodeGraphic.png)
-
-For information about `-D dce=full`, check out [Docs For It](https://haxe.org/manual/cr-dce.html)
-
-`client.hl` can be renamed to whatever you want, but it must have the `.hl` extension (this goes for HLDX also)
+In the *.hxml* file, `client.hl` can be renamed to whatever you want, but it must have the `.hl` extension (this goes for HLDX also)
 
 If you're using *HLDX*, just replace `-lib hlsdl` with `-lib hldx`
 

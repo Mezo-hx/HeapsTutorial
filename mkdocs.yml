@@ -38,6 +38,7 @@ nav:
     - Project Structure: Tutorial/ProjectStructure.md
     - Game Objects: 
       - Texts and Fonts: Tutorial/Texts.md
+      - Use of Scenes: Tutorial/Scenes.md
       - Basic Shapes: Tutorial/Shapes.md
       - Images and Sprites: Tutorial/Images_and_Sprites.md
       - Cameras: Tutorial/Cameras.md
