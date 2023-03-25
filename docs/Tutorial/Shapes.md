@@ -4,8 +4,8 @@ One of the basics, is creating Shapes, and we can do that by typing this in `hxd
 var bitmap = h2d.Bitmap;
 ```
 
-Realize how there's no `new` statement before it, that's because we're gonna edit it in the `init` function, 
-`h2d.Bitmap` is a way of drawing a single tile, but it isn't recommended as it causes *Draw Calls* (we'll talk about this later)
+Realize how there's no `new` statement before it, that's because we're gonna edit it in the `init` function. 
+`h2d.Bitmap` is a way of drawing a single tile, but it isn't recommended as it causes an increase in *Draw Calls* (we'll talk about this later)
 
 Now, add another line in the `init` function (between the brackets):
 
