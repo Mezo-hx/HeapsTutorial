@@ -25,7 +25,7 @@ And with this, we should now see a Red Square on our Project
 
 ![BasicShape](../Images/BasicShapeFinish.png)
 
-## Shape Manipulation
+## Changing the Shape's Position
 
 What if we want to change the position of the shape? we can do so by typing this in the `init` function:
 
@@ -50,3 +50,11 @@ You may have noticed that we're now referencing the `tile` and not the `bmp`, th
 and with that, we have a perfectly centered Square
 
 ![BasicShapeCentered](../Images/BasicShapeCentered.png)
+
+### What are Draw Calls?
+
+*Draw Calls* is a command that is sent to the GPU to render objects on the screen, such as sprites and backgrounds.
+
+*Draw Calls* come in separate requests to the GPU, and because of that it can negatively impact performance.
+
+There's methods to optimize performance, such as batching to reduce the number of *Draw Calls* required. Batching invovles combining multiple objects into a single *Draw Call*, which can improve performance as it reduces the number of request sent to the GPU.
