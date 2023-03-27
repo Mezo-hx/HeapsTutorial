@@ -19,3 +19,7 @@ now after, it's just simple as rendering the `tile` to the `s2d`
 bmp = new Bitmap(tile, s2d);
 ```
 
+## Sprites
+
+Sprite tutorial will be here.
+
